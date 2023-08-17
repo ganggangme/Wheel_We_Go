@@ -135,11 +135,11 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 import os
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR,'static'),
-]
+# STATICFILES_DIRS = [
+#     os.path.join(BASE_DIR,'static'),
+# ]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
@@ -152,8 +152,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 SITE_ID = 1
 
 SOCIALACCOUNT_LOGIN_ON_GET = True
-LOGIN_REDIRECT_URL = 'http://127.0.0.1:8000/main/'
-ACCOUNT_LOGOUT_REDIRECT_URL = 'http://127.0.0.1:8000/'
+LOGIN_REDIRECT_URL = 'https://port-0-wheel-we-go-eu1k2lllfeqwdp.sel3.cloudtype.app/main/'
+ACCOUNT_LOGOUT_REDIRECT_URL = 'https://port-0-wheel-we-go-eu1k2lllfeqwdp.sel3.cloudtype.app/'
 ACCOUNT_LOGOUT_ON_GET = True 
 
 SOCIALACCOUNT_PROVIDERS = {
